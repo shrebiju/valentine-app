@@ -1,7 +1,4 @@
-/* Tailwind Base */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Body default */
 body {
@@ -25,7 +22,7 @@ body {
   padding: 1rem;
   border: none;
   font-family: inherit;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .react-calendar__tile {
@@ -35,25 +32,4 @@ body {
   border-radius: 0.5rem;
   height: 3rem !important;
   line-height: 3rem !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s;
-}
-
-.react-calendar__tile--now {
-  background-color: #fbb6ce !important;
-  color: #111 !important;
-}
-
-.react-calendar__tile--active {
-  background-color: #f472b6 !important;
-  color: white !important;
-}
-
-.react-calendar__month-view__days__day:hover {
-  background-color: #fbcfe8;
-  color: #111 !important;
-  transform: scale(1.05);
-  transition: all 0.2s;
 }

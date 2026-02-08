@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import CornerImages from "@/components/CornerImages";
 
 export default function Home() {
+
   const handleEnter = () => {
     const audio = new Audio("/music/love.mp3");
     audio.loop = true;
@@ -13,17 +13,9 @@ export default function Home() {
     // store globally so next pages know music already started
     window.globalAudio = audio;
   };
-  return (
-    <div className="h-screen relative flex flex-col items-center justify-center text-center">
 
-      <CornerImages
-        images={[
-          "/image/image1.jpg",
-          "/image/image2.jpg",
-          "/image/image3.jpg",
-          "/image/image5.jpg",
-        ]}
-      />
+  return (
+    <div className="h-screen flex flex-col items-center justify-center text-center">
 
       <motion.h1
         initial={{ opacity: 0, scale: .8 }}

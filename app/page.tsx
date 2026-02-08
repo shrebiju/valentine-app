@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import CornerImages from "@/components/CornerImages";
 
 export default function Home() {
 
@@ -16,7 +17,14 @@ export default function Home() {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center text-center">
-
+        <CornerImages
+              images={[
+                "/image/image1.jpg",
+                "/image/image2.jpg",
+                "/image/image3.jpg",
+                "/image/image5.jpg",
+              ]}
+        />
       <motion.h1
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}

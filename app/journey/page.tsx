@@ -80,8 +80,8 @@ export default function JourneyQuiz() {
           "/image/image2.jpg",
           "/image/image3.jpg",
           "/image/image5.jpg",
-          "/image/image5.jpg",
           "/image/image6.jpg",
+          "/image/image7.jpg",
         ]}
       />
 

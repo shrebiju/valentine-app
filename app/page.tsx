@@ -8,17 +8,17 @@ export default function Home() {
   const handleEnter = () => {
     const audio = new Audio("/music/love.mp3");
     audio.loop = true;
-    audio.play();
+    audio.play().catch(() => {});
 
     // store globally so next pages know music already started
-    window.globalAudio = audio;
+    (window as any).globalAudio = audio;
   };
 
   return (
     <div className="h-screen flex flex-col items-center justify-center text-center">
 
       <motion.h1
-        initial={{ opacity: 0, scale: .8 }}
+        initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         className="text-5xl font-bold"
       >

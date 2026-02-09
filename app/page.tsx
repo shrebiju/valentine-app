@@ -30,7 +30,7 @@ export default function Home() {
         animate={{ opacity: 1, scale: 1 }}
         className="text-5xl font-bold"
       >
-        I Built Something For You ❤️
+       Hope you will like it  ❤️
       </motion.h1>
 
       <Link
@@ -38,7 +38,7 @@ export default function Home() {
         onClick={handleEnter}
         className="mt-12 px-8 py-4 bg-pink-500 text-white rounded-2xl"
       >
-        Enter
+        Siju 
       </Link>
     </div>
   );

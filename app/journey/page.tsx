@@ -65,14 +65,7 @@ export default function JourneyQuiz() {
         Our Journey Quiz ❤️
       </h1>
 
-      <CornerImages
-        images={[
-          "/image/image2.jpg",
-          "/image/image2.jpg",
-          "/image/image2.jpg",
-          "/image/image2.jpg",
-        ]}
-      />
+      
 
       {/* Progress Bar */}
       <div className="w-full max-w-xl bg-gray-300 h-3 rounded-full mb-8">
@@ -138,9 +131,9 @@ export default function JourneyQuiz() {
           "/image/image1.jpg",
           "/image/image2.jpg",
           "/image/image3.jpg",
-          "/image/image5.jpg",
-          "/image/image6.jpg",
-          "/image/image7.jpg",
+          "/image/fourth.JPG",
+          "/image/second.JPG",
+          "/image/third.JPG",
         ]}
       />
 

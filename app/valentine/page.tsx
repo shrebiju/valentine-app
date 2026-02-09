@@ -106,7 +106,7 @@ export default function ValentineFull() {
           "/image/image1.jpg",
           "/image/image2.jpg",
           "/image/image3.jpg",
-          "/image/image5.jpg",
+          "/image/fourth.JPG",
         ]}
       />
 

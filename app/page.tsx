@@ -22,7 +22,7 @@ export default function Home() {
                 "/image/image1.jpg",
                 "/image/image2.jpg",
                 "/image/image3.jpg",
-                "/image/image5.jpg",
+                "/image/second.JPG",
               ]}
         />
       <motion.h1

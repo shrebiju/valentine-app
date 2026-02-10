@@ -10,7 +10,7 @@ export default function CornerImages({
   container = "halfimage",
 }: Props) {
   if (container === "halfimage" && images.length < 4) return null;
-  if (container === "fullimage" && images.length < 6) return null;
+  if (container === "fullimage" && images.length < 5) return null;
 
   const imgStyle = {
     borderRadius: "100px 20px",

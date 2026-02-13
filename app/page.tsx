@@ -33,13 +33,13 @@ export default function Home() {
        Hope you will like it  ❤️
       </motion.h1>
 
-      <Link
+      {/* <Link
         href="/journey"
         onClick={handleEnter}
         className="mt-12 px-8 py-4 bg-pink-500 text-white rounded-2xl"
       >
         Siju 
-      </Link>
+      </Link> */}
     </div>
   );
 }

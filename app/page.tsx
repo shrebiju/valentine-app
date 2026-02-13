@@ -3,6 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import CornerImages from "@/components/CornerImages";
+import ValentineNoteModal from "@/components/ValentineNoteModal";
+
+
 
 export default function Home() {
 
@@ -17,6 +20,11 @@ export default function Home() {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center text-center">
+
+<ValentineNoteModal 
+  note="hello its me i hope you remember me like this"
+/>
+
         <CornerImages
               images={[
                 "/image/image1.jpg",
@@ -33,13 +41,14 @@ export default function Home() {
        Hope you will like it  ❤️
       </motion.h1>
 
-      {/* <Link
+      <Link
         href="/journey"
         onClick={handleEnter}
         className="mt-12 px-8 py-4 bg-pink-500 text-white rounded-2xl"
       >
         Siju 
-      </Link> */}
+      </Link>
+      
     </div>
   );
 }

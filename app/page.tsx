@@ -21,10 +21,7 @@ export default function Home() {
   return (
     <div className="h-screen flex flex-col items-center justify-center text-center">
 
-<ValentineNoteModal 
-  note="hello its me i hope you remember me like this"
-/>
-
+ 
         <CornerImages
               images={[
                 "/image/image1.jpg",

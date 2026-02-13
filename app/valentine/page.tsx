@@ -4,10 +4,14 @@ import { useState, useEffect, useRef } from "react";
 import Confetti from "react-confetti";
 import { motion } from "framer-motion";
 import CornerImages from "@/components/CornerImages";
+import ValentineNoteModal from "@/components/ValentineNoteModal";
+
 
 export default function ValentineFull() {
   const [yesClicked, setYesClicked] = useState(false);
   const [noClickCount, setNoClickCount] = useState(0);
+  const [open, setOpen] = useState(false);
+
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const noBtnRef = useRef<HTMLButtonElement>(null);
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
@@ -166,6 +170,22 @@ export default function ValentineFull() {
           No
         </motion.button>
       </div>
+      <ValentineNoteModal
+  note="Hello how are you hope you are fine and always gonna do good. I have no idea 
+  what to write and what not to write as i will not say im not in state of mind etc etc..
+  I always thought how people survive on only one relationship with one girl lifetime 
+  like i have no clue about that as like even masu sometimes feel like dherai bayo but when i meet you 
+  i get it from all perspective of people who survive or love with only one girl that you are the one that i can 
+  live all my life with headache hehehe ani masu diyako xu hai not dhaal chawal wala hhehe, There is so many things wanna tell
+  but mind are not caputuring with emotion want to promise many things but just scared to do dont know i think mero life ta yestai bayo bayo 
+  but in some point i also runied your life dont know k bhanum nabhnum  just aaile nabhnum dherai negative matra aauxa kura haru 
+  just be happy what ever you do always gonna be my wish for you and i just want you best thing happen in life 
+   i will always lOve you ...
+  "
+  open={yesClicked}
+  onClose={() => setYesClicked(false)}
+/>
+
 
       {/* Floating Emojis */}
       {yesClicked &&
